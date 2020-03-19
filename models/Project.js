@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+// Locations
+
 // Create Schema
 const ProjectSchema = new Schema({
   name: {

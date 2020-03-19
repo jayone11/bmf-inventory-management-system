@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+// This is for our products
+
 // Create Schema
 const TaskSchema = new Schema({
   project: {
