@@ -23,6 +23,30 @@ const ProjectSchema = new Schema({
       }
     }
   ],
+  vendor: {
+    type: String
+  },
+  vendor_sku: {
+    type: String
+  },
+  yards: {
+    type: String
+  },
+  cost: {
+    type: String
+  },
+  sku: {
+    type: String
+  },
+  product: {
+    type: String
+  },
+  places: {
+    type: String
+  },
+  address: {
+    type: String
+  },
   date: {
     type: Date,
     default: Date.now

@@ -24,7 +24,15 @@ class Project extends Component {
     taskName: "",
     assignee: "",
     taskId: "",
-    dateDue: ""
+    dateDue: "",
+    vendor: "",
+    vendor_sku: "",
+    yards: "",
+    cost: "",
+    sku: "",
+    product: "",
+    places: "",
+    address: ""
   };
 
   toggleModal = e => {
@@ -54,14 +62,22 @@ class Project extends Component {
     });
   };
 
-  toggleEditTaskModal = (taskName, assignee, dateDue, id, e) => {
+  toggleEditTaskModal = (taskName, assignee, dateDue, id, vendor, vendor_sku, yards, cost, sku, product, places, address,  e) => {
     this.setState({
       modal: !this.state.modal,
       editTask: !this.state.editTask,
       taskName: taskName,
       assignee: assignee,
       taskId: id,
-      dateDue: dateDue
+      dateDue: dateDue,
+      vendor: vendor,
+      vendor_sku: vendor_sku,
+      yards: yards,
+      cost: cost,
+      sku: sku,
+      product: product,
+      places: places,
+      address: address
     });
   };
 
@@ -108,7 +124,16 @@ class Project extends Component {
             task.taskName,
             task.assignee,
             task.dateDue,
-            task._id
+            task._id,
+            task.vendor,
+            task.vendor_sku,
+            task.yards,
+            task.cost,
+            task.sku,
+            task.product,
+            task.places,
+            task.address
+
           )}
           id={index}
           name="task"
@@ -122,7 +147,15 @@ class Project extends Component {
             task.taskName,
             task.assignee,
             task.dateDue,
-            task._id
+            task._id,
+            task.vendor,
+            task.vendor_sku,
+            task.yards,
+            task.cost,
+            task.sku,
+            task.product,
+            task.places,
+            task.address
           )}
           className={!task.assignee ? "task-info muted" : "task-info"}
         >
@@ -136,7 +169,15 @@ class Project extends Component {
             task.taskName,
             task.assignee,
             task.dateDue,
-            task._id
+            task._id,
+            task.vendor,
+            task.vendor_sku,
+            task.yards,
+            task.cost,
+            task.sku,
+            task.product,
+            task.places,
+            task.address
           )}
           className={
             task.dateDue === "Date undefined" ? "task-info muted" : "task-info"
@@ -186,6 +227,15 @@ class Project extends Component {
               assignee={this.state.assignee}
               dateDue={this.state.dateDue}
               taskId={this.state.taskId}
+              taskVendor={this.state.vendor}
+              taskVendor_SKU={this.state.vendor_sku}
+              taskYards={this.state.yards}
+              taskCost={this.state.cost}
+              taskSku={this.state.sku}
+              taskProduct={this.state.product}
+              taskLocation={this.state.places}
+              taskAddress={this.state.address}
+
             />
           </div>
           <div className="tasks-container">
@@ -197,8 +247,15 @@ class Project extends Component {
                 Add Item
               </button>
               <div className="projects-column-headers">
-                <p>Assignee</p>
-                <p>Due</p>
+                <p>Vendor</p>
+                <p>Vendor_SKU</p>
+                <p>Yards</p>
+                <p>Cost</p>
+                <p>SKU</p>
+                <p>Product</p>
+                <p>Location</p>
+                <p>Address</p>
+
               </div>
             </div>
             <div className="project-tasks">{tasksList}</div>
