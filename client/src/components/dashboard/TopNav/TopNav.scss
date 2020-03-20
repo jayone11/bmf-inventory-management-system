@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 80px;
   border-bottom: 2px solid $lighterGray;
   background-color: $white;
   position: fixed;
@@ -31,6 +31,7 @@
 
   .brand-header {
     margin-left: 2rem;
+    margin-top: 1.25rem;
     font-weight: 500;
     font-family: $code;
     font-size: 1rem;
@@ -38,10 +39,6 @@
     letter-spacing: 0.5rem;
     user-select: none;
     color: $black;
-  }
-
-  .brand-header-sub {
-    font-size: 0.5rem;
   }
 }
 

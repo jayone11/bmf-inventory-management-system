@@ -66,7 +66,7 @@ class SideNav extends Component {
         </ul>
         <ul className="bottom">
           <li>
-            <h4 className="side-projects-header">Projects</h4>
+            <h4 className="side-projects-header">Locations</h4>
           </li>
           <div className="project-listings">{projectData}</div>
         </ul>

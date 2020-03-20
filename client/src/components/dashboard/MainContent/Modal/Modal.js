@@ -271,17 +271,17 @@ class Modal extends Component {
           <span className="close-modal" onClick={this.onClose}>
             &times;
           </span>
-          <h1 className="header">Create task</h1>
+          <h1 className="header">Create item</h1>
           <div className="form-group">
             <label>
-              <div className="form-label">Task Name (required)</div>
+              <div className="form-label">Item Name (required)</div>
               <input
                 required
                 onChange={this.onChange}
                 value={this.state.taskName}
                 id="taskName"
                 type="text"
-                placeholder={"What is the task?"}
+                placeholder={"Enter item name..."}
                 className="form-input"
               />
             </label>
@@ -339,7 +339,7 @@ class Modal extends Component {
           </div>
           <div>
             <button className="main-btn update-project" type="submit">
-              Create Task
+              Create Item
             </button>
           </div>
         </form>
@@ -403,17 +403,17 @@ class Modal extends Component {
           <span className="close-modal" onClick={this.onClose}>
             &times;
           </span>
-          <h1 className="header">Edit task</h1>
+          <h1 className="header">Edit Item</h1>
           <div className="form-group">
             <label>
-              <div className="form-label">Task Name (required)</div>
+              <div className="form-label">Item Name (required)</div>
               <input
                 required
                 onChange={this.onChange}
                 value={this.state.taskName}
                 id="taskName"
                 type="text"
-                placeholder={"What is the task?"}
+                placeholder={"What is the item?"}
                 className="form-input"
               />
             </label>
@@ -488,13 +488,13 @@ class Modal extends Component {
               type="button"
               onClick={this.updateTask.bind(this, taskId)}
             >
-              Update Task
+              Update Item
             </button>
             <button
               className="main-btn delete-project"
               onClick={this.deleteTask.bind(this, taskId)}
             >
-              Delete Task
+              Delete Item
             </button>
           </div>
         </form>
@@ -508,19 +508,19 @@ class Modal extends Component {
           <span className="close-modal" onClick={this.onClose}>
             &times;
           </span>
-          <h1 className="header">Edit Project Info</h1>
+          <h1 className="header">Edit Location Info</h1>
           <p className="created-by">
             Created by {this.props.owner.name} ({this.props.owner.email})
           </p>
           <div className="form-group">
             <label>
-              <div className="form-label">Project Name (required)</div>
+              <div className="form-label">Location Name (required)</div>
               <input
                 onChange={this.onChange}
                 value={this.state.projectName}
                 id="projectName"
                 type="text"
-                placeholder={"My Awesome Project"}
+                placeholder={"Enter location name..."}
                 className="form-input"
               />
             </label>
@@ -536,7 +536,7 @@ class Modal extends Component {
               return (
                 <div className="split" key={id}>
                   <label className="form-label" htmlFor={memberId}>
-                    Name (required for teams)
+                    Name (required for access)
                     <input
                       type="text"
                       name="name"
@@ -548,7 +548,7 @@ class Modal extends Component {
                     />
                   </label>
                   <label className="form-label split-email" htmlFor={emailId}>
-                    Email (required for teams)
+                    Email (required for access)
                     <input
                       type="text"
                       name="email"
@@ -574,14 +574,14 @@ class Modal extends Component {
               className="main-btn update-project"
               onClick={this.updateProject.bind(this, this.props.id)}
             >
-              Update Project
+              Update Location
             </button>
             {this.props.owner.id === this.props.auth.user.id ? (
               <button
                 className="main-btn delete-project"
                 onClick={this.deleteProject.bind(this, this.props.id)}
               >
-                Delete Project
+                Delete Location
               </button>
             ) : null}
           </div>
@@ -596,16 +596,16 @@ class Modal extends Component {
           <span className="close-modal" onClick={this.onClose}>
             &times;
           </span>
-          <h1 className="header">Create a project</h1>
+          <h1 className="header">Create a location</h1>
           <div className="form-group">
             <label>
-              <div className="form-label">Project Name (required)</div>
+              <div className="form-label">Location Name (required)</div>
               <input
                 onChange={this.onChange}
                 value={this.state.projectName}
                 id="projectName"
                 type="text"
-                placeholder="My Awesome Project"
+                placeholder="Enter location name..."
                 className="form-input"
               />
             </label>
@@ -621,7 +621,7 @@ class Modal extends Component {
               return (
                 <div className="split" key={id}>
                   <label className="form-label" htmlFor={memberId}>
-                    Name (required for teams)
+                    Name (required for access)
                     <input
                       type="text"
                       name="name"
@@ -633,7 +633,7 @@ class Modal extends Component {
                     />
                   </label>
                   <label className="form-label split-email" htmlFor={emailId}>
-                    Email (required for teams)
+                    Email (required for access)
                     <input
                       type="text"
                       name="email"
@@ -659,7 +659,7 @@ class Modal extends Component {
               className="main-btn create-project"
               onClick={this.createProject}
             >
-              Create Project
+              Create Location
             </button>
           </div>
         </div>

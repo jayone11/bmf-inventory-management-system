@@ -168,7 +168,7 @@ class Project extends Component {
             )}
             className="main-btn center-btn"
           >
-            Edit Project Info
+            Edit Location Info
           </button>
 
           <div className="modal-wrapper">
@@ -194,7 +194,7 @@ class Project extends Component {
                 className="main-btn add-btn"
                 onClick={this.toggleTaskModal}
               >
-                Add task
+                Add Item
               </button>
               <div className="projects-column-headers">
                 <p>Assignee</p>

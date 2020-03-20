@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { logoutUser } from "../../../actions/authActions";
 import { Link, withRouter } from "react-router-dom";
 
+import Logo from "../../../img/BlueMoonLogo_blue.webp"
 import "./TopNav.scss";
 
 class TopNav extends Component {
@@ -64,7 +65,7 @@ class TopNav extends Component {
           </i>
           <Link to="/dashboard">
             <h1 className="brand-header">
-              Team<span className="brand-header-sub">s</span>
+              <span className="brand-header-sub"><img src={Logo} alt="Blue Moon Fabrics company logo" /></span>
             </h1>
           </Link>
         </div>
