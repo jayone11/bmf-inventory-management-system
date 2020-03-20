@@ -26,7 +26,9 @@ class Modal extends Component {
     assignee: "",
     monthDue: "",
     dayDue: "",
-    taskId: ""
+    taskId: "",
+ 
+
   };
 
   componentWillReceiveProps(nextProps) {
@@ -288,6 +290,9 @@ class Modal extends Component {
               />
             </label>
           </div>
+
+
+
           <div className="form-group">
             <div className="split">
               <label>
