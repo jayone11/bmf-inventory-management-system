@@ -4,9 +4,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
   height: 100vh;
-  width: 100%;
+  // width: 100%;
   background: $white;
   background-image: url(https://scontent-lax3-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/88163851_685022188907475_4572789959084000670_n.jpg?_nc_ht=scontent-lax3-1.cdninstagram.com&_nc_cat=103&_nc_ohc=VE0ezTs54f8AX8c36Fh&oh=abe62908e4f5740261fdff2d1b8377c3&oe=5E9EB9C9);
   // background-repeat: no-repeat;
@@ -45,6 +45,9 @@
   background-color: $white;
   border: 1px solid $gray;
   padding: 2rem;
+  border-radius: 3%;
+  opacity: 0.9;
+  margin-top: 1%;
 }
 
 .auth-group {
@@ -113,7 +116,7 @@
 
 .bottom-group {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 2rem;
 }
 
