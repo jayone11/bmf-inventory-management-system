@@ -1,47 +1,42 @@
-# Teams
-
-Project management platform for teams, inspired by [Asana](https://asana.com/) and built using a full JavaScript stack
-
 ## Demo
 
-[Go to Demo](https://protected-eyrie-72642.herokuapp.com/) and create your own account or use `username: test@test.com` and `password: test123`. The demo is hosted on Heroku using their free tier. Thus, it may take 20-30 seconds for the Heroku dyno to wake up since it sleeps after 30 minutes of inactivity.
+[Go to Demo](https://bmf-inventory-management.herokuapp.com/dashboard) and create your own account.
 
-![Current Status](http://g.recordit.co/yx3oC8wmK3.gif)
 
 ## Stack (MERN & Redux)
 
 This project uses the following technologies
 
-- [MongoDB](https://www.mongodb.com/) for database (hosted on [mLab](https://mlab.com/)) & [Mongoose](https://mongoosejs.com/)
+- [MongoDB](https://www.mongodb.com/) for database
 - [Express.js](http://expressjs.com/) as Node web framework
-- [React.js](https://reactjs.org) for client, [React Router](https://reacttraining.com/react-router/) for routing & [Redux](https://redux.js.org/basics/usagewithreact) for state management
+- [React.js](https://reactjs.org)
+- [React Router](https://reacttraining.com/react-router/)
+- [Redux](https://redux.js.org/basics/usagewithreact) for state management
 - [Node.js](https://nodejs.org/en/) for server
-- [SASS](https://sass-lang.com/) as CSS preprocessor (no CSS frameworks)
-- [Create React App](https://github.com/facebook/create-react-app) for bootstrapping client
-
-### Progress
+- [SASS](https://sass-lang.com/) as CSS preprocessor
+- [Create React App](https://github.com/facebook/create-react-app)
 
 #### General
 
 - [x] Authentication
 - [x] Dashboard view
 
-#### Projects
+#### Locations
 
-- [x] Create and fetch team projects
-- [x] Edit team projects
-- [x] Delete team projects (only project owner should be able to delete)
-- [x] Access shared projects
+- [x] Create and fetch locations
+- [x] Edit team locations
+- [x] Delete locations
+- [x] Access shared locations
 
-#### Tasks
+#### Items
 
-- [x] Create, set deadlines for and assign tasks for teams
-- [x] Update tasks
-- [x] Complete and delete tasks
+- [x] Create, set deadlines for and assign items
+- [x] Update items
+- [x] Complete and delete items
 
-#### Containerization & Deployment
+#### Deployment
 
-- [x] Deployment (Heroku)
+- [x] Deployment through Heroku
 
 ## Quick Start
 
@@ -53,7 +48,4 @@ npm run full-install
 
 // Run client & development server with concurrently
 npm run dev
-
-// Assumes Node and npm are installed on machine
-// Server runs on http://localhost:5000 (set in server.js) and client on http://localhost:3000 (default for Create React App)
 ```
